@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:28px;box-sizing:border-box}
+  .group{margin-bottom:10px}
+  .ghead{font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--sp-red);display:flex;align-items:center;gap:10px;margin:0 0 16px 2px}
+  .ghead::before{content:"";width:10px;height:10px;background:var(--sp-red);display:inline-block}
+  .cards{display:flex;flex-direction:column;gap:14px}
+  .card{width:700px;background:#fff;border:1px solid var(--sp-line);border-radius:8px;overflow:hidden}
+  .clabel{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-2);padding:9px 14px;border-bottom:1px solid var(--sp-line)}
+  .cardbody{overflow:hidden}
+  .cardbody .s,.cardbody .name,.cardbody .t,.cardbody .chip,.cardbody .l span,.cardbody .r>span{white-space:nowrap}
+</style></head>
+<body>
+
+<div class="group" data-group="Colors">
+  <div class="ghead">Kolor</div>
+  <div class="cards">
+    <div class="card"><div class="clabel">Paleta core</div><style>#c0{background:var(--sp-paper);margin:0;padding:18px;box-sizing:border-box}
+#c0 .row{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:10px;width:664px}
+#c0 .sw{height:96px;border-radius:var(--r-md);padding:10px 12px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:flex-end}
+#c0 .t{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.5}
+#c0 .sub{display:flex;gap:10px;margin-top:10px;width:664px}
+#c0 .chip{flex:1;height:26px;border-radius:var(--r-sm);display:flex;align-items:center;padding:0 10px}
+</style><div id="c0" class="cardbody" style="min-height:170px">
+  <div class="row">
+    <div class="sw" style="background:var(--sp-ink)"><div class="t" style="color:rgba(255,255,255,.7)">--sp-ink<br>#101113</div></div>
+    <div class="sw" style="background:var(--sp-paper);border:1px solid var(--sp-line)"><div class="t" style="color:var(--sp-tx-2)">--sp-paper<br>#F4F2ED</div></div>
+    <div class="sw" style="background:#fff;border:1px solid var(--sp-line)"><div class="t" style="color:var(--sp-tx-2)">--sp-white<br>#FFFFFF</div></div>
+    <div class="sw" style="background:var(--sp-red)"><div class="t" style="color:#fff">--sp-red<br>#F0391C</div></div>
+  </div>
+  <div class="sub">
+    <div class="chip" style="background:var(--sp-ink-2)"><span class="t" style="color:rgba(255,255,255,.6)">ink-2</span></div>
+    <div class="chip" style="background:var(--sp-ink-3)"><span class="t" style="color:rgba(255,255,255,.6)">ink-3</span></div>
+    <div class="chip" style="background:var(--sp-paper-2)"><span class="t" style="color:var(--sp-tx-2)">paper-2</span></div>
+    <div class="chip" style="background:var(--sp-red-hover)"><span class="t" style="color:#fff">red-hover</span></div>
+    <div class="chip" style="background:var(--sp-red-deep)"><span class="t" style="color:#fff">red-deep</span></div>
+    <div class="chip" style="background:var(--sp-red-tint)"><span class="t" style="color:var(--sp-red-deep)">red-tint</span></div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Tekst i ghost</div><style>#c1{margin:0;display:grid;grid-template-columns:1fr 1fr;width:700px;box-sizing:border-box}
+#c1 .pane{padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+#c1 .l{display:flex;justify-content:space-between;align-items:baseline}
+#c1 .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;opacity:.55}
+#c1 .s{font-family:var(--font-body);font-weight:600;font-size:15px}
+</style><div id="c1" class="cardbody" style="min-height:170px">
+  <div class="pane" style="background:var(--sp-paper)">
+    <div class="l"><span class="s" style="color:var(--sp-tx-1)">Tekst podstawowy</span><span class="name" style="color:var(--sp-tx-2)">tx-1</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-tx-2)">Tekst drugorzędny</span><span class="name" style="color:var(--sp-tx-2)">tx-2</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-tx-3)">Podpisy, metadane</span><span class="name" style="color:var(--sp-tx-2)">tx-3</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-ghost);font-family:var(--font-display);font-weight:800;text-transform:uppercase">Ghost line</span><span class="name" style="color:var(--sp-tx-2)">ghost</span></div>
+  </div>
+  <div class="pane" style="background:var(--sp-ink)">
+    <div class="l"><span class="s" style="color:var(--sp-txd-1)">Tekst podstawowy</span><span class="name" style="color:var(--sp-txd-3)">txd-1</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-txd-2)">Tekst drugorzędny</span><span class="name" style="color:var(--sp-txd-3)">txd-2</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-txd-3)">Podpisy, metadane</span><span class="name" style="color:var(--sp-txd-3)">txd-3</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-ghost-d);font-family:var(--font-display);font-weight:800;text-transform:uppercase">Ghost line</span><span class="name" style="color:var(--sp-txd-3)">ghost-d</span></div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Linie i semantyka</div><style>#c2{background:var(--sp-paper);margin:0;padding:20px;box-sizing:border-box;width:700px}
+#c2 .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--sp-tx-3);margin:0 0 6px}
+#c2 .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+#c2 .sem{display:flex;gap:8px;margin-top:4px}
+#c2 .pill{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:5px 12px;border-radius:999px;color:#fff}
+</style><div id="c2" class="cardbody" style="min-height:150px">
+  <div class="grid">
+    <div>
+      <p class="lbl">Hairline --sp-line · podziały wierszy</p>
+      <div style="border-top:1px solid var(--sp-line);height:12px"></div>
+      <div style="border-top:1px solid var(--sp-line);height:12px"></div>
+      <p class="lbl" style="margin-top:10px">Reguła 1px --sp-ink · nagłówki tabel i sekcji</p>
+      <div style="border-top:1px solid var(--sp-ink);height:10px"></div>
+    </div>
+    <div>
+      <p class="lbl">Semantyka (UI aplikacji)</p>
+      <div class="sem">
+        <span class="pill" style="background:var(--sp-ok)">ok #1E7F4D</span>
+        <span class="pill" style="background:var(--sp-warn)">warn #C27500</span>
+        <span class="pill" style="background:var(--sp-err)">err #C81E00</span>
+      </div>
+      <p class="lbl" style="margin-top:14px">Focus ring</p>
+      <span style="display:inline-block;padding:8px 18px;border-radius:999px;background:var(--sp-ink);color:#fff;font-family:var(--font-body);font-size:13px;font-weight:600;box-shadow:var(--focus-ring)">Fokus</span>
+    </div>
+  </div>
+</div></div>
+  </div>
+</div>
+
+<div class="group" data-group="Type">
+  <div class="ghead">Typografia</div>
+  <div class="cards">
+    <div class="card"><div class="clabel">Display + ghost lines</div><style>#c3{background:var(--sp-paper);margin:0;padding:26px 24px;box-sizing:border-box;width:700px}
+</style><div id="c3" class="cardbody" style="min-height:230px">
+  <div style="font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-3);margin-bottom:14px">Archivo 800 · uppercase · lh 0.96</div>
+  <div style="font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:-0.025em;line-height:.97;font-size:46px">
+    <div style="color:var(--sp-ghost)">Dobra strona</div>
+    <div style="color:var(--sp-ghost)">to za mało.</div>
+    <div style="color:var(--sp-ink)">Budujemy systemy,</div>
+    <div style="color:var(--sp-ink)">które <span style="color:var(--sp-red)">pracują.</span></div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Skala typograficzna</div><style>#c4{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}
+#c4 .r{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--sp-line);padding:9px 0}
+#c4 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--sp-tx-3);width:120px;flex:none}
+</style><div id="c4" class="cardbody" style="min-height:290px">
+  <div class="r"><span class="m">display-2 · 800</span><span style="font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:-0.025em;font-size:40px;line-height:1">Projekty</span></div>
+  <div class="r"><span class="m">h3 · 700 · 40</span><span style="font-family:var(--font-display);font-weight:700;letter-spacing:-0.01em;font-size:32px;line-height:1.05">Aplikacje webowe</span></div>
+  <div class="r"><span class="m">h4 · 700 · 26</span><span style="font-family:var(--font-display);font-weight:700;letter-spacing:-0.01em;font-size:24px">Automatyzacje procesów</span></div>
+  <div class="r"><span class="m">body · 400 · 16</span><span style="font-size:16px;color:var(--sp-tx-1)">To, co projektujemy, jest tym, co wdrażamy. Bez zgubionych detali po drodze.</span></div>
+  <div class="r"><span class="m">small · 400 · 14</span><span style="font-size:14px;color:var(--sp-tx-2)">Podpisy pod zdjęciami, metadane projektów, stopki.</span></div>
+  <div class="r" style="border-bottom:0"><span class="m">micro · mono</span><span style="font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-1)">Wybrane projekty (2023—2026)</span></div>
+</div></div>
+    <div class="card"><div class="clabel">Wielkie cyfry</div><style>#c5{background:var(--sp-paper);margin:0;padding:22px 24px;box-sizing:border-box;width:700px}
+#c5 .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+#c5 .num{font-family:var(--font-display);font-weight:800;font-size:72px;letter-spacing:-0.03em;line-height:1;color:var(--sp-ink)}
+#c5 .u{font-family:var(--font-mono);font-size:20px;font-weight:500;vertical-align:super;color:var(--sp-red);margin-left:2px}
+#c5 .lab{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-2);margin-top:8px;border-top:1px solid var(--sp-ink);padding-top:8px}
+</style><div id="c5" class="cardbody" style="min-height:200px">
+  <div class="grid">
+    <div><div class="num">120<span class="u">+</span></div><div class="lab">Wdrożeń</div></div>
+    <div><div class="num">98<span class="u">%</span></div><div class="lab">Klientów wraca</div></div>
+    <div><div class="num">6<span class="u">tyg</span></div><div class="lab">Mediana startu</div></div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Mono — chrome</div><style>#c6{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px;display:flex;flex-direction:column;gap:12px}
+#c6 .row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+#c6 .mono{font-family:var(--font-mono);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-1)}
+</style><div id="c6" class="cardbody" style="min-height:150px">
+  <div class="row">
+    <span class="mono" style="display:inline-flex;align-items:center;gap:8px"><span style="width:8px;height:8px;background:var(--sp-red);display:inline-block"></span>Usługi</span>
+    <span class="mono">/01</span>
+    <span class="mono">(2023—2026)</span>
+    <span class="mono" style="color:var(--sp-tx-3)">Wyniki, nie obietnice</span>
+  </div>
+  <div class="row">
+    <span class="mono">Zobacz case study <span style="color:var(--sp-red)">→</span></span>
+    <span class="mono">smartpixel.pl <span style="color:var(--sp-red)">↗</span></span>
+    <span class="mono" style="color:var(--sp-tx-3)">Czas wdrożenia · 6 tyg.</span>
+  </div>
+  <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--sp-tx-3)">Mono nigdy nie skleja się z ikonami Lucide w jednym wierszu — strzałki → ↗ i piksel ■ są częścią składu.</div>
+</div></div>
+  </div>
+</div>
+
+<div class="group" data-group="Spacing">
+  <div class="ghead">Spacing · promienie · ruch</div>
+  <div class="cards">
+    <div class="card"><div class="clabel">Skala odstępów</div><style>#c7{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}
+#c7 .r{display:flex;align-items:center;gap:14px;margin-bottom:7px}
+#c7 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;color:var(--sp-tx-3);width:84px;flex:none}
+#c7 .bar{height:12px;background:var(--sp-ink)}
+#c7 .red{background:var(--sp-red)}
+</style><div id="c7" class="cardbody" style="min-height:180px">
+  <div class="r"><span class="m">--sp-2 · 8</span><div class="bar" style="width:8px"></div></div>
+  <div class="r"><span class="m">--sp-4 · 16</span><div class="bar" style="width:16px"></div></div>
+  <div class="r"><span class="m">--sp-6 · 24</span><div class="bar" style="width:24px"></div></div>
+  <div class="r"><span class="m">--sp-10 · 40</span><div class="bar" style="width:40px"></div></div>
+  <div class="r"><span class="m">--sp-18 · 72</span><div class="bar red" style="width:72px"></div></div>
+  <div class="r"><span class="m">--sp-24 · 96</span><div class="bar red" style="width:96px"></div></div>
+  <div class="r" style="margin-bottom:0"><span class="m">--sp-40 · 160</span><div class="bar red" style="width:160px"></div></div>
+</div></div>
+    <div class="card"><div class="clabel">Promienie</div><style>#c8{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px;display:flex;gap:16px;align-items:flex-end}
+#c8 .b{background:#fff;border:1px solid var(--sp-line);width:118px;height:86px;display:flex;align-items:flex-end;padding:8px 10px;box-sizing:border-box}
+#c8 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--sp-tx-2)}
+</style><div id="c8" class="cardbody" style="min-height:170px">
+  <div class="b" style="border-radius:0;background:var(--sp-ink)"><span class="m" style="color:rgba(255,255,255,.65)">media · 0</span></div>
+  <div class="b" style="border-radius:4px"><span class="m">inputs · 4</span></div>
+  <div class="b" style="border-radius:8px"><span class="m">karty · 8</span></div>
+  <div class="b" style="border-radius:14px"><span class="m">feature · 14</span></div>
+  <div style="display:flex;flex-direction:column;gap:8px">
+    <span style="background:var(--sp-red);color:#fff;border-radius:999px;padding:11px 22px;font-family:var(--font-body);font-weight:600;font-size:13.5px">Przycisk · pill</span>
+    <span class="m" style="text-align:center">--r-pill</span>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Elewacja</div><style>#c9{background:var(--sp-paper);margin:0;padding:22px 24px;box-sizing:border-box;width:700px;display:flex;gap:18px}
+#c9 .c{background:#fff;border-radius:8px;width:150px;height:96px;padding:10px 12px;box-sizing:border-box;display:flex;align-items:flex-end}
+#c9 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--sp-tx-2)}
+</style><div id="c9" class="cardbody" style="min-height:170px">
+  <div class="c" style="border:1px solid var(--sp-line)"><span class="m">karta · hairline</span></div>
+  <div class="c" style="box-shadow:var(--shadow-1);border:1px solid var(--sp-line)"><span class="m">shadow-1 · resting</span></div>
+  <div class="c" style="box-shadow:var(--shadow-2)"><span class="m">shadow-2 · menu</span></div>
+  <div class="c" style="box-shadow:var(--shadow-3)"><span class="m">shadow-3 · modal</span></div>
+</div></div>
+    <div class="card"><div class="clabel">Ruch i stany</div><style>#c10{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}
+#c10 .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#c10 .btn{font-family:var(--font-body);font-weight:600;font-size:13.5px;padding:11px 22px;border-radius:999px;border:0;background:var(--sp-red);color:#fff}
+#c10 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--sp-tx-3);width:100%;margin-bottom:10px}
+#c10 .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--sp-tx-3);margin-top:14px}
+</style><div id="c10" class="cardbody" style="min-height:170px">
+  <div class="m">Stany przycisku primary · default / hover / press / focus / disabled</div>
+  <div class="row">
+    <button class="btn">Umów rozmowę</button>
+    <button class="btn" style="background:var(--sp-red-hover)">Umów rozmowę</button>
+    <button class="btn" style="background:var(--sp-red-deep);transform:scale(.98)">Umów rozmowę</button>
+    <button class="btn" style="box-shadow:var(--focus-ring)">Umów rozmowę</button>
+    <button class="btn" style="opacity:.35">Umów rozmowę</button>
+  </div>
+  <div class="note">Wjazdy: fade + 8px w górę, 240ms cubic-bezier(.2,.6,.2,1) · obrazy: scale 1.03 / 600ms · strzałki: +4px w prawo · bez bounce i parallaksy</div>
+</div></div>
+  </div>
+</div>
+
+<div class="group" data-group="Brand">
+  <div class="ghead">Marka</div>
+  <div class="cards">
+    <div class="card"><div class="clabel">Powierzchnie i sekcje</div><style>#c11{background:var(--sp-paper);margin:0;padding:18px;box-sizing:border-box;width:700px;display:grid;grid-template-columns:1.2fr 1.2fr .9fr;gap:12px}
+#c11 .s{border-radius:8px;height:140px;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+#c11 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+#c11 .h{font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:-0.02em;font-size:17px;line-height:1}
+</style><div id="c11" class="cardbody" style="min-height:190px">
+  <div class="s" style="background:var(--sp-paper);border:1px solid var(--sp-line)">
+    <span class="m" style="color:var(--sp-tx-3)">Papier · default</span>
+    <div class="h"><span style="color:var(--sp-ghost)">Sekcje treści,</span><br>oferta, proces</div>
+  </div>
+  <div class="s" style="background:var(--sp-ink)">
+    <span class="m" style="color:var(--sp-txd-3)">Ink · cinema</span>
+    <div class="h" style="color:#fff"><span style="color:var(--sp-ghost-d)">Portfolio,</span><br>manifesty</div>
+  </div>
+  <div class="s" style="background:var(--sp-red)">
+    <span class="m" style="color:rgba(255,255,255,.75)">Red · max 1 na widok</span>
+    <div class="h" style="color:#fff">Panel akcentowy</div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Logo</div><style>#c12{margin:0;display:grid;grid-template-columns:1fr 1fr;width:700px}
+#c12 .pane{padding:26px;display:flex;flex-direction:column;gap:18px;justify-content:center}
+#c12 .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--sp-tx-3)}
+</style><div id="c12" class="cardbody" style="min-height:200px">
+  <div class="pane" style="background:var(--sp-paper)">
+    <img src="../assets/logo-smartpixel-lockup.svg" width="232" alt="Smart Pixel">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="../assets/logo-smartpixel-mark.svg" width="40" alt="">
+      <span class="m">Mark · min. 24px</span>
+    </div>
+  </div>
+  <div class="pane" style="background:var(--sp-ink)">
+    <img src="../assets/logo-smartpixel-lockup-white.svg" width="232" alt="Smart Pixel">
+    <div style="display:flex;align-items:center;gap:14px">
+      <img src="../assets/logo-smartpixel-mark-white.svg" width="40" alt="">
+      <span class="m" style="color:var(--sp-txd-3)">Na ink i na fotografii</span>
+    </div>
+  </div>
+</div></div>
+    <div class="card"><div class="clabel">Głos i ton</div><style>#c13{background:var(--sp-paper);margin:0;padding:22px 24px;box-sizing:border-box;width:700px}
+#c13 .q{font-family:var(--font-display);font-weight:700;font-size:19px;letter-spacing:-0.01em;line-height:1.25;color:var(--sp-ink);border-top:1px solid var(--sp-line);padding:10px 0}
+#c13 .q:first-child{border-top:1px solid var(--sp-ink)}
+#c13 .no{color:var(--sp-tx-3)}
+#c13 .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--sp-red);display:block;margin-bottom:2px}
+</style><div id="c13" class="cardbody" style="min-height:250px">
+  <div class="q"><span class="tag">Hero · odmowa → alternatywa</span><span class="no">Dobra strona to za mało.</span> Budujemy systemy, które pracują.</div>
+  <div class="q"><span class="tag">Oferta · konkret zamiast hype'u</span>Skracamy proces ofertowania z 3 dni do 20 minut.</div>
+  <div class="q"><span class="tag">Proces</span><span class="no">Nie zaczynamy od odpowiedzi.</span> Zaczynamy od właściwych pytań.</div>
+  <div class="q" style="border-bottom:1px solid var(--sp-line)"><span class="tag">CTA</span><span class="no">Nie wysyłamy ofert z szuflady.</span> Zaczynamy od rozmowy.</div>
+</div></div>
+  </div>
+</div>
+
+</body></html>

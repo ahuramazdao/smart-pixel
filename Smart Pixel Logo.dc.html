@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="tokens/colors.css">
+<link rel="stylesheet" href="tokens/fonts.css">
+</helmet>
+
+<div style="min-height:100vh; background:#F4F2ED; font-family:'Archivo',system-ui,sans-serif; color:#101113;">
+  <div style="max-width:1080px; margin:0 auto; padding:80px 48px 120px;">
+
+    <!-- ============ HEADER ============ -->
+    <header style="border-top:2px solid #101113; padding-top:22px; margin-bottom:80px;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:12px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:500; letter-spacing:.1em; text-transform:uppercase; color:#F0391C;">Smart Pixel · Identyfikacja wizualna</span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#8B8983;">3 kierunki znaku</span>
+      </div>
+      <h1 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:88px; line-height:.92; letter-spacing:-.03em; margin:24px 0 0; text-transform:uppercase;">Logo</h1>
+      <p style="max-width:560px; font-size:17px; line-height:1.55; color:#5C5B57; margin:24px 0 0;">Jeden pomysł, trzy kompozycje: <strong style="color:#101113; font-weight:700;">klaster pikseli, z którego jeden ucieka z siatki</strong>. Ostra geometria, krój Archivo i czerwony sygnał jako jedyny akcent — zgodnie z systemem Smart Pixel.</p>
+    </header>
+
+    <!-- ============ VARIANT 01 — PRIMARY ============ -->
+    <section style="margin-bottom:72px;">
+      <div style="display:flex; align-items:center; gap:18px; margin-bottom:24px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; color:#F0391C;">01</span>
+        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-.01em; text-transform:uppercase; margin:0; white-space:nowrap;">Lockup podstawowy</h2>
+        <span style="flex:1; height:1px; background:#101113;"></span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983; white-space:nowrap;">Poziomy · domyślny</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:2px; background:#101113; border:1px solid #101113;">
+        <!-- light stage -->
+        <div style="background:#fff; display:flex; align-items:center; justify-content:center; gap:32px; padding:64px 48px; min-height:200px;">
+          <svg width="84" height="84" viewBox="0 -4 64 64" style="flex:none;" aria-label="Smart Pixel mark">
+            <rect x="0" y="0" width="26" height="26" fill="#101113"/>
+            <rect x="0" y="34" width="26" height="26" fill="#101113"/>
+            <rect x="34" y="34" width="26" height="26" fill="#101113"/>
+            <rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:46px; line-height:1; letter-spacing:-.02em; text-transform:uppercase; white-space:nowrap;"><span style="color:#101113;">Smart</span><span style="color:#F0391C; margin-left:.1em;">Pixel</span></div>
+        </div>
+        <!-- dark stage -->
+        <div style="background:#101113; display:flex; align-items:center; justify-content:center; gap:22px; padding:48px 40px; min-height:200px;">
+          <svg width="58" height="58" viewBox="0 -4 64 64" style="flex:none;" aria-hidden="true">
+            <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/>
+            <rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/>
+            <rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/>
+            <rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:32px; line-height:1; letter-spacing:-.02em; text-transform:uppercase; white-space:nowrap;"><span style="color:#fff;">Smart</span><span style="color:#F0391C; margin-left:.1em;">Pixel</span></div>
+        </div>
+      </div>
+
+      <!-- applications strip -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:#E2DFD7; border:1px solid #E2DFD7; border-top:none;">
+        <!-- app icon -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="width:76px; height:76px; background:#101113; border-radius:16px; display:flex; align-items:center; justify-content:center;">
+            <svg width="38" height="38" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/><rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Ikona app</span>
+        </div>
+        <!-- favicon -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="height:76px; display:flex; align-items:center; justify-content:center;">
+            <svg width="28" height="28" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Favicon · min 24px</span>
+        </div>
+        <!-- mono ink -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="height:76px; display:flex; align-items:center; justify-content:center;">
+            <svg width="42" height="42" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#101113"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Mono · 1 kolor</span>
+        </div>
+        <!-- reversed on ink -->
+        <div style="background:#101113; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="height:76px; display:flex; align-items:center; justify-content:center;">
+            <svg width="42" height="42" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/><rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.44);">Na ink / foto</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VARIANT 02 — STACKED ============ -->
+    <section style="margin-bottom:72px;">
+      <div style="display:flex; align-items:center; gap:18px; margin-bottom:24px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; color:#F0391C;">02</span>
+        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-.01em; text-transform:uppercase; margin:0; white-space:nowrap;">Lockup pionowy</h2>
+        <span style="flex:1; height:1px; background:#101113;"></span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983; white-space:nowrap;">Centrowany · awatary</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#101113; border:1px solid #101113;">
+        <!-- light -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:56px; min-height:240px;">
+          <svg width="74" height="74" viewBox="0 -4 64 64" aria-label="Smart Pixel mark">
+            <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:30px; line-height:1; letter-spacing:.02em; text-transform:uppercase;"><span style="color:#101113;">Smart</span><span style="color:#F0391C; margin-left:.12em;">Pixel</span></div>
+        </div>
+        <!-- dark -->
+        <div style="background:#101113; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:24px; padding:56px; min-height:240px;">
+          <svg width="74" height="74" viewBox="0 -4 64 64" aria-hidden="true">
+            <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/><rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:30px; line-height:1; letter-spacing:.02em; text-transform:uppercase;"><span style="color:#fff;">Smart</span><span style="color:#F0391C; margin-left:.12em;">Pixel</span></div>
+        </div>
+      </div>
+
+      <!-- applications strip -->
+      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:#E2DFD7; border:1px solid #E2DFD7; border-top:none;">
+        <!-- avatar light -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="width:72px; height:72px; border-radius:999px; background:#fff; border:1px solid #E2DFD7; display:flex; align-items:center; justify-content:center;">
+            <svg width="34" height="34" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Awatar · light</span>
+        </div>
+        <!-- avatar dark -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="width:72px; height:72px; border-radius:999px; background:#101113; display:flex; align-items:center; justify-content:center;">
+            <svg width="34" height="34" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/><rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Awatar · ink</span>
+        </div>
+        <!-- red panel -->
+        <div style="background:#F4F2ED; display:flex; flex-direction:column; align-items:center; gap:16px; padding:28px;">
+          <div style="width:72px; height:72px; border-radius:16px; background:#F0391C; display:flex; align-items:center; justify-content:center;">
+            <svg width="34" height="34" viewBox="0 -4 64 64">
+              <rect x="0" y="0" width="26" height="26" fill="#fff"/><rect x="0" y="34" width="26" height="26" fill="#fff"/><rect x="34" y="34" width="26" height="26" fill="#fff"/><rect x="38" y="-4" width="26" height="26" fill="#101113"/>
+            </svg>
+          </div>
+          <span style="font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Panel sygnałowy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VARIANT 03 — SIGNATURE ============ -->
+    <section style="margin-bottom:32px;">
+      <div style="display:flex; align-items:center; gap:18px; margin-bottom:24px;">
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:13px; font-weight:600; color:#F0391C;">03</span>
+        <h2 style="font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; letter-spacing:-.01em; text-transform:uppercase; margin:0; white-space:nowrap;">Sygnatura</h2>
+        <span style="flex:1; height:1px; background:#101113;"></span>
+        <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983; white-space:nowrap;">Wordmark · nagłówki i stopki</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; background:#101113; border:1px solid #101113;">
+        <!-- light -->
+        <div style="background:#fff; display:flex; align-items:center; justify-content:center; gap:18px; padding:56px 40px; min-height:180px;">
+          <svg width="40" height="40" viewBox="0 -4 64 64" style="flex:none;" aria-label="Smart Pixel mark">
+            <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; line-height:1; letter-spacing:-.02em; text-transform:uppercase; white-space:nowrap;"><span style="color:#101113;">Smart</span><span style="color:#F0391C; margin-left:.1em;">Pixel</span></div>
+        </div>
+        <!-- dark -->
+        <div style="background:#101113; display:flex; align-items:center; justify-content:center; gap:18px; padding:56px 40px; min-height:180px;">
+          <svg width="40" height="40" viewBox="0 -4 64 64" style="flex:none;" aria-hidden="true">
+            <rect x="0" y="0" width="26" height="26" fill="#F4F2ED"/><rect x="0" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="34" y="34" width="26" height="26" fill="#F4F2ED"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+          </svg>
+          <div style="font-family:'Archivo',sans-serif; font-weight:800; font-size:34px; line-height:1; letter-spacing:-.02em; text-transform:uppercase; white-space:nowrap;"><span style="color:#fff;">Smart</span><span style="color:#F0391C; margin-left:.1em;">Pixel</span></div>
+        </div>
+      </div>
+
+      <!-- header demo -->
+      <div style="background:#fff; border:1px solid #E2DFD7; border-top:none;">
+        <div style="display:flex; align-items:center; justify-content:space-between; padding:18px 28px; border-bottom:1px solid #E2DFD7;">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <svg width="26" height="26" viewBox="0 -4 64 64" style="flex:none;">
+              <rect x="0" y="0" width="26" height="26" fill="#101113"/><rect x="0" y="34" width="26" height="26" fill="#101113"/><rect x="34" y="34" width="26" height="26" fill="#101113"/><rect x="38" y="-4" width="26" height="26" fill="#F0391C"/>
+            </svg>
+            <span style="font-family:'Archivo',sans-serif; font-weight:800; font-size:17px; letter-spacing:-.01em; text-transform:uppercase; white-space:nowrap;"><span style="color:#101113;">Smart</span><span style="color:#F0391C;">Pixel</span></span>
+          </div>
+          <div style="display:flex; align-items:center; gap:28px;">
+            <span style="font-size:14px; font-weight:500; color:#5C5B57;">Aplikacje</span>
+            <span style="font-size:14px; font-weight:500; color:#5C5B57;">Automatyzacje</span>
+            <span style="font-size:13px; font-weight:700; color:#fff; background:#F0391C; padding:9px 18px;">Współpraca</span>
+          </div>
+        </div>
+        <div style="padding:12px 28px; font-family:'IBM Plex Mono',monospace; font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:#8B8983;">Przykład użycia w nagłówku strony</div>
+      </div>
+    </section>
+
+  </div>
+</div>
+</x-dc>
+</body>
+</html>
