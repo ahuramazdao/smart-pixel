@@ -1,0 +1,42 @@
+<!-- @dsCard group="Components" name="Treść" subtitle="ProjectCard · ServiceRow (akordeon) · QuoteCard" viewport="700x560" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}
+  .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--sp-tx-3);margin:0 0 10px}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>window.exports={};window.module={exports:window.exports};window.require=function(){return window.exports;};</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="env,react" src="ProjectCard.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="ServiceRow.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="QuoteCard.jsx"></script>
+<script type="text/babel" data-presets="env,react">
+const { ProjectCard, ServiceRow, QuoteCard } = window.exports;
+function App() {
+  return (
+    <div>
+      <div style={{display:'grid',gridTemplateColumns:'1fr 1.2fr',gap:20,marginBottom:24}}>
+        <div>
+          <p className="m">ProjectCard (placeholder zdjęcia)</p>
+          <ProjectCard title="Panel B2B Hurtex" client="Hurtex" tags={['Aplikacja']} year="2026" ratio="4 / 3" />
+        </div>
+        <div>
+          <p className="m">QuoteCard</p>
+          <QuoteCard quote="Skrócili nam ofertowanie z trzech dni do dwudziestu minut." name="Marta Lis" role="COO, Hurtex" />
+        </div>
+      </div>
+      <p className="m">ServiceRow · zamknięty (ghost) / otwarty (ink)</p>
+      <ServiceRow index="01" title="Strony internetowe" />
+      <ServiceRow index="02" title="Aplikacje webowe" open lead="Panele, portale i narzędzia wewnętrzne. Projektujemy i budujemy w jednym zespole — bez zgubionych detali po drodze." items={['UX/UI','Frontend','Backend','Integracje API']} timeframe="6–12 tyg." />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body></html>

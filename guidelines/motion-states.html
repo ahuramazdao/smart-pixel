@@ -1,0 +1,22 @@
+<!-- @dsCard group="Spacing" name="Ruch i stany" subtitle="240ms ease-out · hover 140ms · press scale .98 · fokus ring" viewport="700x170" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}
+  .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .btn{font-family:var(--font-body);font-weight:600;font-size:13.5px;padding:11px 22px;border-radius:999px;border:0;background:var(--sp-red);color:#fff}
+  .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--sp-tx-3);width:100%;margin-bottom:10px}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--sp-tx-3);margin-top:14px}
+</style></head>
+<body>
+  <div class="m">Stany przycisku primary · default / hover / press / focus / disabled</div>
+  <div class="row">
+    <button class="btn">Umów rozmowę</button>
+    <button class="btn" style="background:var(--sp-red-hover)">Umów rozmowę</button>
+    <button class="btn" style="background:var(--sp-red-deep);transform:scale(.98)">Umów rozmowę</button>
+    <button class="btn" style="box-shadow:var(--focus-ring)">Umów rozmowę</button>
+    <button class="btn" style="opacity:.35">Umów rozmowę</button>
+  </div>
+  <div class="note">Wjazdy: fade + 8px w górę, 240ms cubic-bezier(.2,.6,.2,1) · obrazy: scale 1.03 / 600ms · strzałki: +4px w prawo · bez bounce i parallaksy</div>
+</body></html>

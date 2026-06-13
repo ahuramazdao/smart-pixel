@@ -1,0 +1,32 @@
+<!-- @dsCard group="Colors" name="Linie i semantyka" subtitle="Hairlines · reguły · ok / warn / err" viewport="700x150" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:20px;box-sizing:border-box;width:700px}
+  .lbl{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--sp-tx-3);margin:0 0 6px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .sem{display:flex;gap:8px;margin-top:4px}
+  .pill{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:5px 12px;border-radius:999px;color:#fff}
+</style></head>
+<body>
+  <div class="grid">
+    <div>
+      <p class="lbl">Hairline --sp-line · podziały wierszy</p>
+      <div style="border-top:1px solid var(--sp-line);height:12px"></div>
+      <div style="border-top:1px solid var(--sp-line);height:12px"></div>
+      <p class="lbl" style="margin-top:10px">Reguła 1px --sp-ink · nagłówki tabel i sekcji</p>
+      <div style="border-top:1px solid var(--sp-ink);height:10px"></div>
+    </div>
+    <div>
+      <p class="lbl">Semantyka (UI aplikacji)</p>
+      <div class="sem">
+        <span class="pill" style="background:var(--sp-ok)">ok #1E7F4D</span>
+        <span class="pill" style="background:var(--sp-warn)">warn #C27500</span>
+        <span class="pill" style="background:var(--sp-err)">err #C81E00</span>
+      </div>
+      <p class="lbl" style="margin-top:14px">Focus ring</p>
+      <span style="display:inline-block;padding:8px 18px;border-radius:999px;background:var(--sp-ink);color:#fff;font-family:var(--font-body);font-size:13px;font-weight:600;box-shadow:var(--focus-ring)">Fokus</span>
+    </div>
+  </div>
+</body></html>

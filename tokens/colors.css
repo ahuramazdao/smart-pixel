@@ -1,0 +1,53 @@
+/* Smart Pixel — color tokens
+   Editorial trio: ink (near-black) + paper (warm off-white) + signal red.
+   Red is scarce by design: one accent per view earns attention. */
+
+:root {
+  /* Ink — dark surfaces & primary text */
+  --sp-ink:        #101113;
+  --sp-ink-2:      #18191C;   /* card on dark */
+  --sp-ink-3:      #232529;   /* raised on dark, dark borders */
+
+  /* Paper — light surfaces */
+  --sp-paper:      #F4F2ED;   /* default page background (warm off-white) */
+  --sp-paper-2:    #EBE8E1;   /* recessed strip / table header on light */
+  --sp-white:      #FFFFFF;   /* cards on paper */
+
+  /* Signal red — the single accent */
+  --sp-red:        #F0391C;
+  --sp-red-hover:  #D92E12;
+  --sp-red-deep:   #A82008;   /* pressed / dark-red panels */
+  --sp-red-tint:   #FBE3DC;   /* subtle red wash on light */
+
+  /* Text on light */
+  --sp-tx-1:       #101113;
+  --sp-tx-2:       #5C5B57;
+  --sp-tx-3:       #8B8983;
+  --sp-ghost:      #C9C5BC;   /* ghost headline lines on paper */
+
+  /* Text on dark */
+  --sp-txd-1:      #FFFFFF;
+  --sp-txd-2:      rgba(255,255,255,.68);
+  --sp-txd-3:      rgba(255,255,255,.44);
+  --sp-ghost-d:    rgba(255,255,255,.24); /* ghost headline lines on ink */
+
+  /* Lines & hairlines */
+  --sp-line:        #E2DFD7;             /* hairline on paper */
+  --sp-line-strong: #101113;             /* 1px structural rule on light */
+  --sp-line-d:      rgba(255,255,255,.14); /* hairline on ink */
+
+  /* Semantic (app UI) */
+  --sp-ok:    #1E7F4D;
+  --sp-warn:  #C27500;
+  --sp-err:   #C81E00;
+
+  /* Semantic aliases */
+  --surface-page:    var(--sp-paper);
+  --surface-card:    var(--sp-white);
+  --surface-inverse: var(--sp-ink);
+  --surface-accent:  var(--sp-red);
+  --text-body:       var(--sp-tx-1);
+  --text-muted:      var(--sp-tx-2);
+  --accent:          var(--sp-red);
+  --border-default:  var(--sp-line);
+}

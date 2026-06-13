@@ -1,0 +1,40 @@
+<!-- @dsCard group="Components" name="Nawigacja" subtitle="Header (sticky, blur) · Footer (wordmark)" viewport="700x430" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;width:700px;overflow:hidden}
+  .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--sp-tx-3);margin:14px 24px 8px}
+  .scale{transform:scale(.53);transform-origin:top left;width:1320px}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>window.exports={};window.module={exports:window.exports};window.require=function(){return window.exports;};</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="env,react" src="Header.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="Footer.jsx"></script>
+<script type="text/babel" data-presets="env,react">
+const { Header, Footer } = window.exports;
+function App() {
+  return (
+    <div>
+      <p className="m">Header · 1320 @ 53%</p>
+      <div className="scale" style={{height:42}}>
+        <Header sticky={false} active="#projekty" links={[{label:'Projekty',href:'#projekty'},{label:'Usługi',href:'#uslugi'},{label:'Proces',href:'#proces'},{label:'Kontakt',href:'#kontakt'}]} />
+      </div>
+      <p className="m">Footer</p>
+      <div className="scale" style={{height:330}}>
+        <Footer columns={[
+          {title:'Nawigacja',links:[{label:'Projekty',href:'#'},{label:'Usługi',href:'#'},{label:'Proces',href:'#'}]},
+          {title:'Społeczność',links:[{label:'LinkedIn',href:'#'},{label:'Behance',href:'#'},{label:'GitHub',href:'#'}]},
+        ]} />
+      </div>
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body></html>

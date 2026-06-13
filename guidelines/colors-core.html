@@ -1,0 +1,28 @@
+<!-- @dsCard group="Colors" name="Paleta core" subtitle="Ink · paper · white · signal red" viewport="700x170" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:18px;box-sizing:border-box}
+  .row{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.4fr;gap:10px;width:664px}
+  .sw{height:96px;border-radius:var(--r-md);padding:10px 12px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:flex-end}
+  .t{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;line-height:1.5}
+  .sub{display:flex;gap:10px;margin-top:10px;width:664px}
+  .chip{flex:1;height:26px;border-radius:var(--r-sm);display:flex;align-items:center;padding:0 10px}
+</style></head>
+<body>
+  <div class="row">
+    <div class="sw" style="background:var(--sp-ink)"><div class="t" style="color:rgba(255,255,255,.7)">--sp-ink<br>#101113</div></div>
+    <div class="sw" style="background:var(--sp-paper);border:1px solid var(--sp-line)"><div class="t" style="color:var(--sp-tx-2)">--sp-paper<br>#F4F2ED</div></div>
+    <div class="sw" style="background:#fff;border:1px solid var(--sp-line)"><div class="t" style="color:var(--sp-tx-2)">--sp-white<br>#FFFFFF</div></div>
+    <div class="sw" style="background:var(--sp-red)"><div class="t" style="color:#fff">--sp-red<br>#F0391C</div></div>
+  </div>
+  <div class="sub">
+    <div class="chip" style="background:var(--sp-ink-2)"><span class="t" style="color:rgba(255,255,255,.6)">ink-2</span></div>
+    <div class="chip" style="background:var(--sp-ink-3)"><span class="t" style="color:rgba(255,255,255,.6)">ink-3</span></div>
+    <div class="chip" style="background:var(--sp-paper-2)"><span class="t" style="color:var(--sp-tx-2)">paper-2</span></div>
+    <div class="chip" style="background:var(--sp-red-hover)"><span class="t" style="color:#fff">red-hover</span></div>
+    <div class="chip" style="background:var(--sp-red-deep)"><span class="t" style="color:#fff">red-deep</span></div>
+    <div class="chip" style="background:var(--sp-red-tint)"><span class="t" style="color:var(--sp-red-deep)">red-tint</span></div>
+  </div>
+</body></html>

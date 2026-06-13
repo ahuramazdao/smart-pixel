@@ -1,0 +1,18 @@
+<!-- @dsCard group="Type" name="Wielkie cyfry" subtitle="Statystyki: display 800 + jednostka mono w indeksie" viewport="700x200" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:22px 24px;box-sizing:border-box;width:700px}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px}
+  .num{font-family:var(--font-display);font-weight:800;font-size:72px;letter-spacing:-0.03em;line-height:1;color:var(--sp-ink)}
+  .u{font-family:var(--font-mono);font-size:20px;font-weight:500;vertical-align:super;color:var(--sp-red);margin-left:2px}
+  .lab{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--sp-tx-2);margin-top:8px;border-top:1px solid var(--sp-ink);padding-top:8px}
+</style></head>
+<body>
+  <div class="grid">
+    <div><div class="num">120<span class="u">+</span></div><div class="lab">Wdrożeń</div></div>
+    <div><div class="num">98<span class="u">%</span></div><div class="lab">Klientów wraca</div></div>
+    <div><div class="num">6<span class="u">tyg</span></div><div class="lab">Mediana startu</div></div>
+  </div>
+</body></html>

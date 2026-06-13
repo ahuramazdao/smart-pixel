@@ -1,0 +1,23 @@
+/* Smart Pixel — elevation, motion, states
+   The brand is flat and printed, not floaty: shadows are rare and soft,
+   structure comes from hairlines and 1px rules. */
+
+:root {
+  --shadow-1: 0 1px 2px rgba(16,17,19,.06);                  /* resting card (optional) */
+  --shadow-2: 0 16px 40px -16px rgba(16,17,19,.22);          /* menus, sticky bars */
+  --shadow-3: 0 32px 72px -24px rgba(16,17,19,.38);          /* modals */
+
+  /* Motion */
+  --ease-out:  cubic-bezier(0.2, 0.6, 0.2, 1);
+  --ease-soft: cubic-bezier(0.33, 1, 0.5, 1);
+  --dur-fast: 140ms;   /* hover */
+  --dur-base: 240ms;   /* reveals, accordions */
+  --dur-slow: 600ms;   /* image scale, page transitions */
+
+  /* Focus */
+  --focus-ring: 0 0 0 2px var(--sp-paper), 0 0 0 4px var(--sp-red);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition-duration: 1ms !important; }
+}

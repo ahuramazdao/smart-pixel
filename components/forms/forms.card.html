@@ -1,0 +1,32 @@
+<!-- @dsCard group="Components" name="Formularze" subtitle="Input · Select · Textarea · stany focus / error" viewport="700x330" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>body{background:var(--sp-paper);margin:0;padding:20px 24px;box-sizing:border-box;width:700px}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>window.exports={};window.module={exports:window.exports};window.require=function(){return window.exports;};</script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="env,react" src="Input.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="Textarea.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="Select.jsx"></script>
+<script type="text/babel" data-presets="env,react">
+const { Input, Textarea, Select } = window.exports;
+function App() {
+  const [topic, setTopic] = React.useState('');
+  return (
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'16px 20px'}}>
+      <Input label="Imię i nazwisko" placeholder="Jan Kowalski" required />
+      <Input label="E-mail" type="email" placeholder="jan@firma.pl" error="Podaj poprawny adres" />
+      <Select label="Czego potrzebujesz?" required options={['Strona www','Aplikacja webowa','Automatyzacja','Nie wiem — doradźcie']} value={topic} onChange={(e)=>setTopic(e.target.value)} />
+      <Input label="Budżet (orientacyjnie)" placeholder="np. 20–40 tys. zł" />
+      <Textarea label="O projekcie" placeholder="Co budujemy i po co?" rows={3} style={{gridColumn:'1 / -1'}} />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body></html>

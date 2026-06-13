@@ -1,0 +1,8 @@
+/* Smart Pixel — webfonts
+   ⚑ SUBSTITUTION: brand fonts loaded from Google Fonts.
+   Display + body: Archivo (variable 100–900) — nearest open match to the tight,
+   heavy grotesque of the reference. Micro-labels / numerals: IBM Plex Mono.
+   If Smart Pixel licenses dedicated fonts, drop .woff2 files into fonts/
+   and replace these imports with @font-face rules. */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");

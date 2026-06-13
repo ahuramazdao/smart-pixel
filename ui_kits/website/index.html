@@ -1,0 +1,102 @@
+<!-- @dsCard group="Strona WWW" name="Strona agencji" subtitle="Interaktywna strona Smart Pixel: start + kontakt" viewport="1440x900" -->
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smart Pixel — Strony, aplikacje i automatyzacje, które pracują</title>
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--sp-paper); }
+  * { box-sizing: border-box; }
+  @keyframes sp-marquee { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @media (prefers-reduced-motion: reduce) {
+    [style*="sp-marquee"] { animation: none !important; }
+  }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
+<script>window.exports={};window.module={exports:window.exports};window.require=function(){return window.exports;};</script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="env,react" src="../../components/core/Button.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/core/ArrowLink.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/core/Eyebrow.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/core/Tag.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/core/Stat.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/forms/Input.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/forms/Textarea.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/forms/Select.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/content/ProjectCard.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/content/ServiceRow.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/content/QuoteCard.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/navigation/Header.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="../../components/navigation/Footer.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="Home.jsx"></script>
+<script type="text/babel" data-presets="env,react" src="Contact.jsx"></script>
+
+<script type="text/babel" data-presets="env,react">
+const { Header, Footer, Home, Contact } = window.exports;
+
+function scrollToAnchor(href) {
+  const el = document.querySelector(href);
+  if (el) {
+    const y = el.getBoundingClientRect().top + window.scrollY - 80;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+}
+
+function App() {
+  const [page, setPage] = React.useState('home');
+
+  const navigate = (href) => {
+    if (href === '#kontakt') { setPage('contact'); window.scrollTo({ top: 0 }); return; }
+    if (page !== 'home') {
+      setPage('home');
+      setTimeout(() => (href === '#start' ? window.scrollTo({ top: 0, behavior: 'smooth' }) : scrollToAnchor(href)), 60);
+    } else {
+      href === '#start' ? window.scrollTo({ top: 0, behavior: 'smooth' }) : scrollToAnchor(href);
+    }
+  };
+
+  return (
+    <div>
+      <Header
+        links={[
+          { label: 'Projekty', href: '#projekty' },
+          { label: 'Usługi', href: '#uslugi' },
+          { label: 'Proces', href: '#proces' },
+          { label: 'Kontakt', href: '#kontakt' },
+        ]}
+        active={page === 'contact' ? '#kontakt' : undefined}
+        onNavigate={navigate}
+        onCta={() => navigate('#kontakt')}
+      />
+      {page === 'home' ? <Home onCta={() => navigate('#kontakt')} /> : <Contact />}
+      <Footer
+        onNavigate={navigate}
+        columns={[
+          { title: 'Nawigacja', links: [
+            { label: 'Projekty', href: '#projekty' },
+            { label: 'Usługi', href: '#uslugi' },
+            { label: 'Proces', href: '#proces' },
+            { label: 'Kontakt', href: '#kontakt' },
+          ]},
+          { title: 'Internet', links: [
+            { label: 'LinkedIn', href: '#' },
+            { label: 'Behance', href: '#' },
+            { label: 'GitHub', href: '#' },
+          ]},
+        ]}
+      />
+    </div>
+  );
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

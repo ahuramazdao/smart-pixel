@@ -1,0 +1,25 @@
+<!-- @dsCard group="Colors" name="Tekst i ghost" subtitle="Tinty tekstu na papierze i na ink" viewport="700x170" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;display:grid;grid-template-columns:1fr 1fr;width:700px;box-sizing:border-box}
+  .pane{padding:18px 20px;display:flex;flex-direction:column;gap:6px}
+  .l{display:flex;justify-content:space-between;align-items:baseline}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;opacity:.55}
+  .s{font-family:var(--font-body);font-weight:600;font-size:15px}
+</style></head>
+<body>
+  <div class="pane" style="background:var(--sp-paper)">
+    <div class="l"><span class="s" style="color:var(--sp-tx-1)">Tekst podstawowy</span><span class="name" style="color:var(--sp-tx-2)">tx-1</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-tx-2)">Tekst drugorzędny</span><span class="name" style="color:var(--sp-tx-2)">tx-2</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-tx-3)">Podpisy, metadane</span><span class="name" style="color:var(--sp-tx-2)">tx-3</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-ghost);font-family:var(--font-display);font-weight:800;text-transform:uppercase">Ghost line</span><span class="name" style="color:var(--sp-tx-2)">ghost</span></div>
+  </div>
+  <div class="pane" style="background:var(--sp-ink)">
+    <div class="l"><span class="s" style="color:var(--sp-txd-1)">Tekst podstawowy</span><span class="name" style="color:var(--sp-txd-3)">txd-1</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-txd-2)">Tekst drugorzędny</span><span class="name" style="color:var(--sp-txd-3)">txd-2</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-txd-3)">Podpisy, metadane</span><span class="name" style="color:var(--sp-txd-3)">txd-3</span></div>
+    <div class="l"><span class="s" style="color:var(--sp-ghost-d);font-family:var(--font-display);font-weight:800;text-transform:uppercase">Ghost line</span><span class="name" style="color:var(--sp-txd-3)">ghost-d</span></div>
+  </div>
+</body></html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 44" width="320" height="44" role="img" aria-label="Smart Pixel">
+  <g transform="translate(0,7) scale(0.5)">
+    <rect x="0" y="0" width="26" height="26" fill="#101113"></rect>
+    <rect x="0" y="34" width="26" height="26" fill="#101113"></rect>
+    <rect x="34" y="34" width="26" height="26" fill="#101113"></rect>
+    <rect x="38" y="-4" width="26" height="26" fill="#F0391C"></rect>
+  </g>
+  <text x="48" y="33" font-family="Archivo, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6">
+    <tspan fill="#101113">SMART</tspan><tspan fill="#F0391C" dx="6">PIXEL</tspan>
+  </text>
+</svg>

@@ -1,0 +1,24 @@
+<!-- @dsCard group="Brand" name="Powierzchnie i sekcje" subtitle="Papier domyślnie · cinema na ink · jeden panel czerwieni" viewport="700x190" -->
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="../styles.css">
+<style>
+  body{background:var(--sp-paper);margin:0;padding:18px;box-sizing:border-box;width:700px;display:grid;grid-template-columns:1.2fr 1.2fr .9fr;gap:12px}
+  .s{border-radius:8px;height:140px;padding:14px;box-sizing:border-box;display:flex;flex-direction:column;justify-content:space-between}
+  .m{font-family:var(--font-mono);font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+  .h{font-family:var(--font-display);font-weight:800;text-transform:uppercase;letter-spacing:-0.02em;font-size:17px;line-height:1}
+</style></head>
+<body>
+  <div class="s" style="background:var(--sp-paper);border:1px solid var(--sp-line)">
+    <span class="m" style="color:var(--sp-tx-3)">Papier · default</span>
+    <div class="h"><span style="color:var(--sp-ghost)">Sekcje treści,</span><br>oferta, proces</div>
+  </div>
+  <div class="s" style="background:var(--sp-ink)">
+    <span class="m" style="color:var(--sp-txd-3)">Ink · cinema</span>
+    <div class="h" style="color:#fff"><span style="color:var(--sp-ghost-d)">Portfolio,</span><br>manifesty</div>
+  </div>
+  <div class="s" style="background:var(--sp-red)">
+    <span class="m" style="color:rgba(255,255,255,.75)">Red · max 1 na widok</span>
+    <div class="h" style="color:#fff">Panel akcentowy</div>
+  </div>
+</body></html>
